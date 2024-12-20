@@ -1,0 +1,271 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css);
+/* Home.css */
+.home-page {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #ffffff;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    scroll-behavior: smooth;
+  }
+  .hello{                             
+    font-size: 52px;
+    font-weight: bold; 
+  }
+  .profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 50px;
+    background-color: transparent; /* Remove background color */
+    border-radius: 0px; /* Remove the border-radius */
+    box-shadow: none; /* Remove box shadow */
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Smooth transitions */
+    overflow: hidden; /*Important: prevent content from overflowing */
+  }
+  
+  .profile-pic {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    position: relative; /* Needed for positioning */
+    left: 50%;
+    margin-top: 100%;
+    transform: translate(-50%, -50%);
+  }
+  .mail__btn {
+    align-items: center;
+    height: 30px;
+    max-width: max-content;
+    background-color: rgb(33, 33, 33, 0.07);
+    border-radius: 100px;
+    color: #2f2f2f;
+    font-size: 1rem;
+    padding: 0.65rem 1.3em;
+  }
+  
+  .text-container {
+    flex-grow: 1;
+    padding: 0 20px;
+    position: relative;
+  }
+  
+  .text-container h1 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .text-container p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-evenly; /* Align buttons to the left */
+    gap: 15px;
+    margin-bottom: 20px; /* Added margin */
+  }
+  
+  .btn {
+    color: black;
+    padding: 10px 20px; 
+    border-radius: 50%;
+    border: 0.5px solid rgb(47, 47, 47, 0.8);
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 80px;
+  }
+  .btn1{
+    background-color: rgba(255, 230, 0, 0.855);
+  }
+  .btn2{
+    background-color: rgba(255, 0, 0, 0.84);
+  }
+  .btn3{
+    background-color: rgba(0, 0, 255, 0.836);
+  }
+  .btn1:hover {
+    background-color: #ffffff;
+    color: rgba(255, 230, 0, 0.855);
+    border: 0.5px solid rgba(255, 230, 0, 0.855);
+  }
+  .btn2:hover {
+    background-color: #ffffff;
+    color: rgba(255, 0, 0, 0.84);
+    border: 0.5px solid rgba(255, 0, 0, 0.84);
+  }
+  .btn3:hover {
+    background-color: #ffffff;
+    color: rgba(0, 0, 255, 0.836);
+    border: 0.5px solid rgba(0, 0, 255, 0.836);
+  }
+  
+  
+  
+  /* Remove extra spacing for some browsers */
+  .profile-container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  
+  /* Better responsive layout */
+  @media (max-width: 768px) {
+    .profile-container {
+      flex-direction: column;
+    }
+  }
+  
+  
+  /* Better responsive layout for really small screens */
+  @media (max-width: 576px) {
+    .profile-container {
+      flex-direction: column;
+      align-items: center;
+      /* Adjust margins to center */
+    }
+    .profile-pic{
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+  footer {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .footer-info p, .footer-social p {
+    margin: 5px 0;
+  }
+  
+  .footer-info strong, .footer-social strong {
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .footer-social a {
+    margin: 0 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #666;
+  }
+  
+  .footer-social a:hover {
+    color: #000;
+  }
+  
+  .footer-rights {
+    margin-top: 10px;
+  }
+  
+  .footer-rights p {
+    font-size: 12px;
+    color: #999;
+  }
+  
+
+  /* Cool infinite background scrolling animation.
+ * Twitter: @kootoopas
+ */
+/* Exo thin font from Google. */
+/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+/* Main styles */
+body {
+  color: #999;
+  font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
+  text-align: center;
+  /* img size is 50x50 */
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+  -webkit-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Safari 4+ */
+  -moz-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Fx 5+ */
+  -o-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Opera 12+ */
+  animation: bg-scrolling-reverse 0.92s infinite;
+  /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+.main{
+  padding: 0px;
+}

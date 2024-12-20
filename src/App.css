@@ -1,0 +1,111 @@
+/* App.css */
+.app {
+  font-family: sans-serif;
+  display: flex;
+  min-height: 100vh; /* Important for full viewport height */
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  position: sticky; /* Keeps header at the top on scroll */
+  top: 0; /* Important for sticky header */
+  z-index: 10;
+}
+
+.logo {
+  display: flex;
+  align-items: center; /* Vertically center logo text */
+}
+
+.logox {
+  margin-right: 0.5rem; /* Add spacing between logo and text */
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  margin: 0 0.5rem; /* Adjust spacing as needed */
+}
+
+nav li:first-child {
+    margin-left: 0;
+}
+
+nav li:last-child{
+    margin-right: 0;
+}
+nav a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+.mail__btn{
+  border: 0.5px solid grey;
+  background-color: #fff;
+  height: 40px;
+}
+.mail__btn:hover {
+  background-color: rgb(102, 102, 239);
+  transition-duration: 0.3s;
+  color: white;
+}
+
+main {
+  flex-grow: 1;
+  scroll-behavior: smooth;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  nav ul {
+    flex-wrap: wrap; /* Wrap menu items on smaller screens */
+  }
+
+  nav li {
+    margin: 0.5rem 0; /* Adjust spacing */
+    flex-basis: 100%;
+    text-align: center;  /* Center elements on smaller screens */
+  }
+
+  .logo{
+    justify-content: center;
+  }
+  .logox {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .mail__btn {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: fit-content;
+  }
+  .header {
+  flex-direction: column;
+  align-items: center;
+  }
+
+}

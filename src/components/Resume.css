@@ -1,0 +1,105 @@
+.resume-page {
+    margin: 30px;
+    padding: 20px;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 2px solid rgb(93, 196, 255);
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.work-experience{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.matter{  
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.inner-matter{
+  max-width: 400px;
+  text-align: left;
+}
+.p{
+  max-width: 150px;
+}
+.values{
+  display: flex;
+  flex-direction: column;
+}
+
+.period{
+  margin-right: 20px;
+}
+
+.lang-icons{
+  max-width: 1000px;
+  align-items: center;
+}
+.lang{
+  max-height: 60px;
+  max-width: 60px;
+  margin: 5px;
+}
+.lang-heading{
+  margin: 20px;
+  color: #333;
+  text-align: left;
+}
+.download-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
+.achievements-container {
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.achievements-container h2 {
+  color: #333;
+  text-align: left;
+  margin: 20px;
+}
+
+.achievements-container ul {
+  list-style-type: disc;
+  padding-left: 40px;
+}
+
+.achievements-container li {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #555;
+}
+
+.achievements-container li b {
+  font-weight: 600;
+  color: #333;
+}
