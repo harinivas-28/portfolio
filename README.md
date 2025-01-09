@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 ### Preview of the Portfolio Template
-[Visit portfolio](https://githubbox.com/harinivas-28/portfolio-template)
+[Visit Portfolio](https://githubbox.com/harinivas-28/portfolio-template)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
